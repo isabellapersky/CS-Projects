@@ -1,0 +1,15 @@
+<!--dashboard.html--> 
+
+{% extends "layout.html" %}
+{% block content %}
+<div class="card">
+    <h2>Welcome, {{ username }}!</h2>
+    <p>Here are your available options:</p>
+    <ul>
+        {% for option in menu_options %}
+        <li>{{ option }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('logout') }}" class="btn btn-danger mt-3">Logout</a>
+</div>
+{% endblock %}

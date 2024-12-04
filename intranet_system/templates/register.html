@@ -1,0 +1,14 @@
+<!--register.html--> 
+
+<form method="POST" action="{{ url_for('register') }}">
+    <label for="username">Username:</label>
+    <input type="text" name="username" required>
+    
+    <label for="password">Password:</label>
+    <input type="password" name="password" required>
+    
+    <label for="password_check">Confirm Password:</label>
+    <input type="password" name="password_check" required>
+    
+    <button type="submit">Register</button>
+</form>

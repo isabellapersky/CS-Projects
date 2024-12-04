@@ -1,0 +1,74 @@
+<!--layout.html--> 
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d9f7d9; 
+            color: #006400; 
+        }
+
+        #top-image {
+            display: block;
+            margin: 0 auto;
+            width: 150px; 
+            height: auto; 
+        }
+
+        #masthead {
+            text-align: center;
+            padding: 10px;
+        }
+
+        #content {
+            margin: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+
+        h1, h2 {
+            color: #006400; 
+        }
+    </style>
+</head>
+
+<body>
+    <img src="{{ url_for('static', filename='catamount.png') }}" id="top-image" />
+
+    <div id="masthead">
+        <h1>Catamount Company Intranet System</h1>
+    </div>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div>
+                {% for category, message in messages %}
+                    <div class="alert {{ category }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endwith %}
+
+    <div id="content">
+        <h2>{{ heading }}</h2>
+        {% block content %}{% endblock %}
+    </div>
+
+    <footer>
+        <strong>University of Vermont</strong><br />CS2660 - Cybersecurity Principles
+    </footer>
+</body>
+
+</html>
