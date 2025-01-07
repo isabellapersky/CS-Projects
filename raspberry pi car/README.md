@@ -1,0 +1,10 @@
+Isabella Persky
+
+OVERVIEW
+The Remote Control Party Car is a product our team has designed to revolutionize the way people experience parties and entertainment. By combining cutting-edge technology with a sleek and portable design, we aim to provide an unforgettable experience for partygoers everywhere.
+
+OUR MISSION
+Our mission is to revolutionize the intersection of technology and entertainment, through unwavering dedication, persistence, and creativity. By harnessing the power of innovative technologies, we empower individuals to craft immersive experiences that transcend traditional limitations. Our mission is to inspire a new era of connectivity, joy, and celebration, where technology serves as the catalyst for unforgettable moments and endless possibilities.
+
+PROJECT DETAILS
+Our project consists of a remote controlled car that can connect to a phone/computer to play music and is controlled by a computer remotely. This car can be driven around or be turned into autonomous mode in order for the party to go on without anyone controlling the car. The autonomous mode uses the ultrasonic sensor in order to detect obstacles in its way and maneuver around them. If there are no obstacles in the robot's way, then it continues to drive in a straight line. This car has three wheels, the back two are motor powered, and the front wheel is used to steer. Our product includes a Bluetooth speaker connected to the Raspberry Pi. Additionally, we have added a blinking light strip to elevate the fun. The Raspberry Pi and speaker are powered by the power bank while the motors and lights are powered by a battery pack. The battery pack, and the power bank are stacked on top of each other in order to fit onto the car. The motor driver which allows the motors to run, is attached to the bottom of the car and the motors. The project will run code kept on the Raspberry Pi.
